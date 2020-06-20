@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : shaderLoader.cpp
 // Description : shaderLoader implementation file
@@ -13,9 +7,6 @@
 //
 
 #include "ShaderLoader.h" 
-#include<iostream>
-#include<fstream>
-#include<vector>
 
 ShaderLoader::ShaderLoader(void){}
 ShaderLoader::~ShaderLoader(void){}

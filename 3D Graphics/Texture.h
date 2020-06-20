@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : Texture.h
 // Description : Texture declaration file
@@ -13,8 +7,6 @@
 //
 
 #pragma once
-#ifndef __TEXTURE_H__
-#define __TEXTURE_H__
 
 #include "Utils.h"
 
@@ -42,5 +34,3 @@ protected:
 	int m_iTextureCount;
 
 };
-
-#endif //__TEXTURE_H__

@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : time.h
 // Description : Time declaration file
@@ -13,8 +7,6 @@
 //
 
 #pragma once
-#if !defined(__TIME_H__)
-#define __TIME_H__
 
 #include "Utils.h"
 
@@ -42,5 +34,3 @@ protected:
 	double m_fTimeElapsed, m_fDeltaTime, m_fLastTime, m_fCurrentTime, m_fSecondsPerCount;
 	int m_iFrameCount = 0;
 };
-
-#endif

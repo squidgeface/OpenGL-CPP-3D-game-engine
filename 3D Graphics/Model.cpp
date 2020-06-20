@@ -1,5 +1,12 @@
-#include "Model.h"
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : model.cpp
+// Description : model implementation file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
 
+#include "Model.h"
 #include "Camera.h"
 
 CModel::CModel(std::string path, CCamera* camera) {

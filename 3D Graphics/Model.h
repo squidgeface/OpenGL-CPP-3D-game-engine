@@ -1,7 +1,12 @@
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : model.h
+// Description : model declaration file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
 
-
-#if !defined(__MODEL_H__)
-#define __MODEL_H__
+#pragma once
 
 #include "ModelMesh.h"
 #include "Utils.h"
@@ -49,5 +54,3 @@ private:
 
 	GLint TextureFromFile(const char* path, string directory);
 };
-
-#endif //__MODEL_H__

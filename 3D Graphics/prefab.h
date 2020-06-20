@@ -1,13 +1,7 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : prefab.h
-// Description : prefab header file
+// Description : prefab declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
@@ -16,7 +10,6 @@
 #pragma once
 
 #include "Utils.h"
-
 
 class CMesh;
 class CTexture;
@@ -77,7 +70,7 @@ protected:
 
 	//Matrix manipulation variables
 	vec3 m_v3ObjPosition, m_v3RotationAxisX, m_v3RotationAxisY, m_v3RotationAxisZ, m_v3ObjScale;
-	mat4 m_m4TranslationMatrix, m_m4RotationX, m_m4RotationZ, m_m4RotationY, m_m4ScaleMatrix, model, MVP;
+	mat4 m_m4TranslationMatrix, m_m4RotationX, m_m4RotationZ, m_m4RotationY, m_m4ScaleMatrix, m_m4Model, MVP;
 	float m_fRotationAngle, m_fTexPos;
 	bool m_bRotations;
 	const int m_iMx, m_iMy;

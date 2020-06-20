@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : cubemap.h
 // Description : cubemap declaration file
@@ -21,7 +15,7 @@ class CCamera;
 class CCubemap
 {
 public:
-	// Constructor (sets default texture modes)
+	// Constructors (sets default texture modes)
 	CCubemap(CCamera* camera, vector<string> filePaths);
 	// Generates texture from image data
 	void Generate();

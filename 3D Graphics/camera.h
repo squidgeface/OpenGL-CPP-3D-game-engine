@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : camera.h
 // Description : camera declaration file
@@ -37,8 +31,6 @@ public:
 	void LookAtObject(vec3 _objPositions);
 	vec3 GetCamPos();
 	void CameraRotate(CTime* _time);
-
-
 
 protected:
 	//variables

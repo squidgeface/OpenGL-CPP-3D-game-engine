@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : TextLabel.h
 // Description : TextLabel declaration file
@@ -13,9 +7,6 @@
 //
 
 #pragma once
-#ifndef __TEXTLABEL_H__
-#define __TEXTLABEL_H__
-
 
 #include "Utils.h"
 
@@ -56,5 +47,3 @@ private:
 	mat4 proj;
 	map<GLchar, FontChar> Characters;
 };
-
-#endif //__TEXTLABEL_H__

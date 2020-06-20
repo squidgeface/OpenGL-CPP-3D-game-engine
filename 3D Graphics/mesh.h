@@ -1,20 +1,12 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : mesh.h
-// Description : mesh header file
+// Description : mesh declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
 
 #pragma once
-#ifndef __MESH_H__
-#define __MESH_H__
 
 #include "Utils.h"
 
@@ -24,7 +16,6 @@ public:
 	CMesh();
 	~CMesh();
 
-	
 	void CreateQuad();
 	void CreateCube();
 	void CreateSphere();
@@ -183,5 +174,3 @@ protected:
 		
 
 };
-
-#endif //__MESH_H__

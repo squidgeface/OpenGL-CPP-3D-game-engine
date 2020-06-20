@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : Utils.h
 // Description : Utils declaration file
@@ -12,9 +6,6 @@
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
 #pragma once
-
-#if !defined(__UTILS_H__)
-#define __UTILS_H__
 
 // Dependency Includes
 #include <glew.h>
@@ -59,7 +50,7 @@ enum class InputState
 	INPUT_UP_FIRST,
 	INPUT_DOWN_FIRST,
 };
-
+//prefab mesh type
 enum class MeshType
 {
 	ANIQUAD,
@@ -70,7 +61,7 @@ enum class MeshType
 	SPHERE,
 	MODEL,
 };
-
+//enemy animation state
 enum class aniState {
 	NONE,
 	SPAWN,
@@ -86,5 +77,3 @@ namespace Utils
 	const float HalfScreenW = ScreenWidth / 2;
 	const float HalfScreenH = ScreenHeight / 2;
 }
-
-#endif    // __UTILS_H__

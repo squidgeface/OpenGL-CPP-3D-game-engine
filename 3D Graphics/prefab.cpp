@@ -1,10 +1,4 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : prefab.cpp
 // Description : prefab implementaion file
@@ -149,7 +143,7 @@ void CPrefab::RenderShapes(GLuint program, int slot)
 	glUniformMatrix4fv(comboLoc, 1, GL_FALSE, value_ptr(MVP));
 
 	GLint modelLoc = glGetUniformLocation(program, "model");
-	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(m_m4Model));
 
 	//Texture position
 	GLint texPosLoc = glGetUniformLocation(program, "texPos");
@@ -256,15 +250,15 @@ void CPrefab::UpdateShapes(CCubemap* _cubeMap, CPrefab* _Object)
 	}
 
 	//Model matrix calculation
-	model = m_m4TranslationMatrix * m_m4RotationZ * m_m4RotationX * m_m4RotationY *  m_m4ScaleMatrix;
+	m_m4Model = m_m4TranslationMatrix * m_m4RotationZ * m_m4RotationX * m_m4RotationY *  m_m4ScaleMatrix;
 
 	if (m_eMeshType == MeshType::MODEL)
 	{
-		m_pObjMesh->Update(model);
+		m_pObjMesh->Update(m_m4Model);
 	}
 
 	//Combo matrix
-	MVP = m_pCamera->GetCamera() * m_pCamera->GetView() * model;
+	MVP = m_pCamera->GetCamera() * m_pCamera->GetView() * m_m4Model;
 
 }
 

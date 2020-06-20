@@ -1,26 +1,14 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : ShaderLoader.h
-// Description : shader loader header file
+// Description : shader loader declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
 
 #pragma once
-#ifndef __SHADERLOADER_H__
-#define __SHADERLOADER_H__
 
-// Dependency Includes
 #include "Utils.h"
-
-// Library Includes
-#include <iostream>
 
 class ShaderLoader
 {
@@ -35,5 +23,3 @@ private:
 	static std::string ReadShaderFile(const char *filename);
 	static void PrintErrorDetails(bool isShader, GLuint id, const char* name);
 };
-
-#endif //__SHADERLOADER_H__

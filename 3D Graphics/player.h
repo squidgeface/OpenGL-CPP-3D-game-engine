@@ -1,28 +1,18 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : player.h
-// Description : player header file
+// Description : player declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
 
 #pragma once
-#ifndef __PLAYER_H__
-#define __PLAYER_H__
 
 #include "Utils.h"
 #include "prefab.h"
 
 class CHealthBar;
 class CTime;
-
-
 
 class CPlayer : public virtual CPrefab
 {
@@ -45,5 +35,3 @@ protected:
 	CTime* m_pTime;
 	bool m_bIsDead, m_bIsHit, m_bOuch;
 };
-
-#endif //__PLAYER_H__

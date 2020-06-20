@@ -1,3 +1,11 @@
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : button.h
+// Description : button implementation file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
+
 #include "button.h"
 #include "input.h"
 

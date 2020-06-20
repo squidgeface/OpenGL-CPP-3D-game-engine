@@ -1,6 +1,11 @@
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : modelmesh.h
+// Description : modelmesh declaration file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
 
-
-// EDIT
 #include "Utils.h"
 
 class CCamera;
@@ -32,18 +37,18 @@ public:
 	// Render the mesh
 	void Render(CCamera* camera, GLuint program);
 
-	void Update(mat4 model);
+	void Update(mat4 m_m4Model);
 
 private:
 	/*  Render data  */
 	GLuint VAO, VBO, EBO;
-	mat4 model;
-	mat4 m_Scale;
-	mat4 mvp;
+	mat4 m_m4Model;
+	mat4 m_m4Scale;
+	mat4 m_m4MVP;
 	vec3 m_v3ObjPosition;
 	mat4 m_m4TranslationMatrix;
 	vec3 m_v3RotationAxisZ;
-	float rotationAngle;
+	float m_fRotationAngle;
 	mat4 m_m4RotationZ;
 	vec3 m_v3ObjScale;
 	

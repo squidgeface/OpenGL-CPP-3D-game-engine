@@ -1,3 +1,11 @@
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : button.h
+// Description : button declaration file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
+
 #pragma once
 
 #include "prefab.h"

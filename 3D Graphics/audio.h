@@ -1,13 +1,7 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : audio.h
-// Description : audio header file
+// Description : audio declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //

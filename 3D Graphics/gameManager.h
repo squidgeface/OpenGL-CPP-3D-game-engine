@@ -1,20 +1,13 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : gameManager.h
-// Description : gameManager header file
+// Description : gameManager declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
 
 #pragma once
-#ifndef __GAMEMANAGER_H__
-#define __GAMEMANAGER_H__
+
 
 //local includes
 #include "Utils.h"
@@ -77,7 +70,6 @@ public:
 	void ProcessInput(InputState* KeyState, InputState* MouseState);
 
 	void Initialise2DPointer();
-
 	void Initialise3DPointer();
 
 protected:
@@ -154,5 +146,3 @@ protected:
 	//enum
 	GameState m_eGameState;
 };
-
-#endif //__GAMEMANAGER_H__

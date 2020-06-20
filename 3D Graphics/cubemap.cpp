@@ -1,3 +1,11 @@
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : cubemap.cpp
+// Description : cubemap implementation file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
+
 #include "cubemap.h"
 #include "camera.h"
 
@@ -9,7 +17,6 @@ CCubemap::CCubemap(CCamera* acamera, vector<string> filePaths)
 	, m_pCamera(acamera)
 	, Textures(filePaths)
 {
-
 }
 
 void CCubemap::Generate()
@@ -52,7 +59,7 @@ void CCubemap::Generate()
 		2,
 		GL_FLOAT,
 		GL_FALSE,
-		8 * sizeof(GLfloat),				//Stride = pos + colour + texture
+		8 * sizeof(GLfloat),				//Stride = pos + normal + texture
 		(GLvoid*)(6 * sizeof(GLfloat)));	//offset from beginning of Vertex (bypass pos and colour)
 
 	glEnableVertexAttribArray(2);
@@ -93,8 +100,8 @@ void CCubemap::Generate()
 
 void CCubemap::Update()
 {
-	mat4 model = scale(mat4(), vec3(2000.0f, 2000.0f, 2000.0f));
-	MVP = m_pCamera->GetVPMatrix() * model;
+	mat4 m_m4Model = scale(mat4(), vec3(2000.0f, 2000.0f, 2000.0f));
+	MVP = m_pCamera->GetVPMatrix() * m_m4Model;
 }
 
 void CCubemap::Render(GLuint program)

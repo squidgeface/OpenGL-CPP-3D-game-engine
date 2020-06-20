@@ -1,8 +1,13 @@
+// (c) 2020 Alexander Jenkins
+//
+// File Name   : modelmesh.cpp
+// Description : modelmesh implementation file
+// Author      : alexander jenkins
+// Mail        : alexander.jen8470@mediadesign.school.nz
+//
+
 #include "ModelMesh.h"
 #include "Camera.h"
-
-#if !defined(__MODELMESH_H__)
-#define __MODELMESH_H__
 
 ModelMesh::ModelMesh(vector<Vertex> vertices, vector<GLuint> indices, vector<MeshTexture> Textures)
 {
@@ -18,14 +23,14 @@ ModelMesh::ModelMesh(vector<Vertex> vertices, vector<GLuint> indices, vector<Mes
 
 	//Rotation
 	m_v3RotationAxisZ = vec3(0.0f, 0.0f, 1.0f);
-	rotationAngle = 0.0f;
-	m_m4RotationZ = rotate(glm::mat4(), radians(rotationAngle), m_v3RotationAxisZ);
+	m_fRotationAngle = 0.0f;
+	m_m4RotationZ = rotate(glm::mat4(), radians(m_fRotationAngle), m_v3RotationAxisZ);
 
 	//Scale
 	m_v3ObjScale = vec3(1.0f, 1.0f, 1.0f);
 	m_m4ScaleMatrix = scale(mat4(), m_v3ObjScale);
 
-	model = m_m4TranslationMatrix * m_m4RotationZ * m_m4ScaleMatrix;
+	m_m4Model = m_m4TranslationMatrix * m_m4RotationZ * m_m4ScaleMatrix;
 }
 
 // Render the mesh
@@ -56,11 +61,11 @@ void ModelMesh::Render(CCamera* camera, GLuint program)
 
 	// EDIT
 	
-	mvp = camera->GetVPMatrix() * model;
+	m_m4MVP = camera->GetVPMatrix() * m_m4Model;
 	GLint mvpLoc = glGetUniformLocation(program, "MVP");
-	glUniformMatrix4fv(mvpLoc, 1, GL_FALSE, glm::value_ptr(mvp));
+	glUniformMatrix4fv(mvpLoc, 1, GL_FALSE, glm::value_ptr(m_m4MVP));
 	GLint modelLoc = glGetUniformLocation(program, "model");
-	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(m_m4Model));
 	// EDIT END
 
 	// Draw mesh
@@ -77,7 +82,7 @@ void ModelMesh::Render(CCamera* camera, GLuint program)
 
 void ModelMesh::Update(mat4 _model)
 {
-	model = _model;
+	m_m4Model = _model;
 }
 
 void ModelMesh::setupMesh()
@@ -111,5 +116,3 @@ void ModelMesh::setupMesh()
 
 	glBindVertexArray(0);
 }
-
-#endif

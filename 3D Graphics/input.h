@@ -1,27 +1,17 @@
-//
-// Bachelor of Software Engineering
-// Media Design School
-// Auckland
-// New Zealand
-//
-// (c) 2020 Media Design School
+// (c) 2020 Alexander Jenkins
 //
 // File Name   : input.h
-// Description : input header file
+// Description : input declaration file
 // Author      : alexander jenkins
 // Mail        : alexander.jen8470@mediadesign.school.nz
 //
 
 #pragma once
-#ifndef __INPUT_H__
-#define __INPUT_H__
 
 #include "gameManager.h"
-#include "camera.h"
 
 //Prototype classes
 class CCamera;
-
 
 class CInput
 {
@@ -39,8 +29,6 @@ public:
 	int GetMouseX();
 	int GetMouseY();
 
-
-
 protected:
 
 	int m_imouseX,  m_imouseY, m_icounter;
@@ -49,5 +37,3 @@ protected:
 	InputState MouseState[3];
 
 };
-
-#endif // !__INPUT_H__
