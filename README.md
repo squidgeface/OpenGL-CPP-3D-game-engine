@@ -1,4 +1,4 @@
-# OpenGL C++ 3D game engine
+# OpenGL C++ 3D game framework
  3D game engine in openGL
 
 [CONTROLS]
