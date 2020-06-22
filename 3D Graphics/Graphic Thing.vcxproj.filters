@@ -15,132 +15,132 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
+    <ClCompile Include="Source\audio.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShaderLoader.cpp">
+    <ClCompile Include="Source\bullet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="camera.cpp">
+    <ClCompile Include="Source\button.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="gameManager.cpp">
+    <ClCompile Include="Source\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="time.cpp">
+    <ClCompile Include="Source\cubemap.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="prefab.cpp">
+    <ClCompile Include="Source\enemy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="input.cpp">
+    <ClCompile Include="Source\explode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TextLabel.cpp">
+    <ClCompile Include="Source\gameManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mesh.cpp">
+    <ClCompile Include="Source\healthBar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
+    <ClCompile Include="Source\input.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="enemy.cpp">
+    <ClCompile Include="Source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="player.cpp">
+    <ClCompile Include="Source\mesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="bullet.cpp">
+    <ClCompile Include="Source\Model.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="particle.cpp">
+    <ClCompile Include="Source\ModelMesh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="explode.cpp">
+    <ClCompile Include="Source\particle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="audio.cpp">
+    <ClCompile Include="Source\player.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Model.cpp">
+    <ClCompile Include="Source\prefab.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ModelMesh.cpp">
+    <ClCompile Include="Source\ShaderLoader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="cubemap.cpp">
+    <ClCompile Include="Source\TextLabel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="healthBar.cpp">
+    <ClCompile Include="Source\Texture.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="button.cpp">
+    <ClCompile Include="Source\time.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ShaderLoader.h">
+    <ClInclude Include="Source\audio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Utils.h">
+    <ClInclude Include="Source\bullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="camera.h">
+    <ClInclude Include="Source\button.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="gameManager.h">
+    <ClInclude Include="Source\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="time.h">
+    <ClInclude Include="Source\cubemap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="prefab.h">
+    <ClInclude Include="Source\enemy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="input.h">
+    <ClInclude Include="Source\explode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TextLabel.h">
+    <ClInclude Include="Source\gameManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="mesh.h">
+    <ClInclude Include="Source\healthBar.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
+    <ClInclude Include="Source\input.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="enemy.h">
+    <ClInclude Include="Source\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="player.h">
+    <ClInclude Include="Source\Model.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="bullet.h">
+    <ClInclude Include="Source\ModelMesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="particle.h">
+    <ClInclude Include="Source\particle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="explode.h">
+    <ClInclude Include="Source\player.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="audio.h">
+    <ClInclude Include="Source\prefab.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Model.h">
+    <ClInclude Include="Source\ShaderLoader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ModelMesh.h">
+    <ClInclude Include="Source\TextLabel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="cubemap.h">
+    <ClInclude Include="Source\Texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="healthBar.h">
+    <ClInclude Include="Source\time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="button.h">
+    <ClInclude Include="Source\Utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
