@@ -8,6 +8,7 @@
 
 #include "player.h"
 #include "time.h"
+#include "camera.h"
 
 //set this object death state
 void CPlayer::SetDead(bool _isdead)
@@ -40,12 +41,6 @@ bool CPlayer::GetDead()
 	return m_bIsDead;
 }
 
-//return this object prefab
-CPrefab * CPlayer::GetPrefab()
-{
-	return this;
-}
-
 bool CPlayer::CheckModelCollision(CPrefab* _object)
 {
 
@@ -70,5 +65,29 @@ bool CPlayer::CheckObjectCollision(CPrefab* _object)
 	else
 	{
 		return false;
+	}
+}
+
+void CPlayer::MoveCamera(CCamera* _camera)
+{
+	//set up boundary collision for camera movement
+			//Left collision
+	if (GetObjPosition().x <= _camera->GetCamLookDir().x - 90)
+	{
+		_camera->MoveCamera(vec3(-0.8f, 0.0f, 0.0f), m_pTime);
+	}
+	//Right collision
+	else if (GetObjPosition().x >= _camera->GetCamLookDir().x + 90)
+	{
+		_camera->MoveCamera(vec3(0.8f, 0.0f, 0.0f), m_pTime);
+	}
+	//Top collision
+	if (GetObjPosition().z <= _camera->GetCamLookDir().z - 60)
+	{
+		_camera->MoveCamera(vec3(0.0f, 0.0f, -0.8f), m_pTime);
+	}
+	else if (GetObjPosition().z >= _camera->GetCamLookDir().z + 30)
+	{
+		_camera->MoveCamera(vec3(0.0f, 0.0f, 0.8f), m_pTime);
 	}
 }

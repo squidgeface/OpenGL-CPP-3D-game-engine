@@ -1,2 +1,4 @@
 [FOLDER]
 .vs
+/[Dd]ebug/
+**/[3]D Graphics/[Dd]ebug/

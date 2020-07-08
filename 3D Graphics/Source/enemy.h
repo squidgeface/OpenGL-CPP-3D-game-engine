@@ -39,7 +39,6 @@ public:
 
 	bool GetDead();
 	bool GetAttacking();
-	CPrefab* GetPrefab();
 	aniState GetState();
 
 	void SetGroup(vector<CEnemy*> _group);

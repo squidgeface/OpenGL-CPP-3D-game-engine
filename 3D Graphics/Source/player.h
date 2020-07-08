@@ -13,6 +13,7 @@
 
 class CHealthBar;
 class CTime;
+class CCamera;
 
 class CPlayer : public virtual CPrefab
 {
@@ -21,14 +22,18 @@ public:
 
 	CPlayer() : CPrefab(), m_bIsHit(false), m_bOuch(false), m_bIsDead(false), m_pTime(0){};
 	
+	bool GetDead();
 	void SetDead(bool _isdead);
+
 	bool GetHit();
 	void SetHit(bool _hit);
-	bool GetDead();
+
 	void PlayerMovement(vec3 direction, CTime* _time);
-	CPrefab* GetPrefab();
+	void MoveCamera(CCamera* _camera);
 	bool CheckModelCollision(CPrefab* _object);
 	bool CheckObjectCollision(CPrefab* _object);
+
+
 
 protected:
 

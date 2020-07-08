@@ -93,11 +93,6 @@ bool CEnemy::GetAttacking()
 	return m_bIsAttacking;
 }
 
-CPrefab* CEnemy::GetPrefab()
-{
-	return this;
-}
-
 void CEnemy::SetGroup(vector<CEnemy*> _group)
 {
 	m_vGroup = _group;
@@ -173,7 +168,7 @@ vec2 CEnemy::Separation()
 	for (size_t i = 0; i < m_vGroup.size(); i++)
 	{
 		//if this object is not being checked against itself
-		if (this != m_vGroup[i]->GetPrefab())
+		if (this != m_vGroup[i])
 		{
 			//if the distance of this object with its neighbours is less than this object size
 			if (Distance(vec2(m_v3ObjPosition.x, m_v3ObjPosition.z), vec2(m_vGroup[i]->GetObjPosition().x, m_vGroup[i]->GetObjPosition().z)) < 10)

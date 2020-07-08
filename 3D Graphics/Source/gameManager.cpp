@@ -1139,28 +1139,8 @@ void CGameManager::ProcessInput(InputState* KeyState, InputState* MouseState)
 		{
 
 			// *** PLAYER MOVEMENT *** //
-
-			//set up boundary collision for camera movement
-			//Left collision
-			if (m_pPlayerPrefab->GetObjPosition().x <= m_pProjCamera->GetCamLookDir().x - 90)
-			{
-				m_pProjCamera->MoveCamera(vec3(-1.0f, 0.0f, 0.0f), m_pTime);
-			}	
-			//Right collision
-			else if (m_pPlayerPrefab->GetObjPosition().x >= m_pProjCamera->GetCamLookDir().x + 90)
-			{
-				m_pProjCamera->MoveCamera(vec3(1.0f, 0.0f, 0.0f), m_pTime);
-			}
-			//Top collision
-			if (m_pPlayerPrefab->GetObjPosition().z <= m_pProjCamera->GetCamLookDir().z - 60)
-			{
-				m_pProjCamera->MoveCamera(vec3(0.0f, 0.0f, -1.0f), m_pTime);
-			}
-			else if (m_pPlayerPrefab->GetObjPosition().z >= m_pProjCamera->GetCamLookDir().z + 30)
-			{
-				m_pProjCamera->MoveCamera(vec3(0.0f, 0.0f, 1.0f), m_pTime);
-			}
-
+			//Camera Movement
+			m_pPlayerPrefab->MoveCamera(m_pProjCamera);
 			
 			//Level Boundary
 			//Left wall collision
